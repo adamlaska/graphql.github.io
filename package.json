@@ -6,7 +6,9 @@
     "start": "rm -rf build && babel-node resources/server.js",
     "build": "rm -rf build && babel-node resources/build.js",
     "watch": "rm -rf build && babel-node resources/watch.js",
-    "test": "npm run build"
+    "test": "npm run build",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "babel": {
     "optional": [
@@ -19,23 +21,25 @@
     "build": "./build"
   },
   "devDependencies": {
-    "babel": "^5.8.23",
-    "babel-core": "^5.8.23",
-    "babel-loader": "^5.3.2",
+    "babel": "^6.0.0",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.0.0",
     "babel-runtime": "^5.8.20",
     "express": "^4.13.3",
-    "js-yaml": "^3.4.0",
-    "less": "^2.7.1",
-    "react": "15.3.1",
+    "js-yaml": "^3.13.1",
+    "less": "^3.0.2",
+    "react": "16.5.0",
     "react-dom": "15.3.1",
-    "sane": "^1.2.0",
-    "webpack": "^1.12.1"
+    "sane": "^4.0.2",
+    "webpack": "^3.0.0"
   },
   "dependencies": {
     "codemirror": "^5.6.0",
     "codemirror-graphql": "^0.5.7",
     "graphql": "^0.7.0",
     "graphql-tools": "^0.6.6",
-    "marked": "^0.3.5"
-  }
+    "marked": "^0.3.5",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
