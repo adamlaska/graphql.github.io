@@ -73,7 +73,7 @@
     "parser-front-matter": "1.6.4",
     "plaiceholder": "^3.0.0",
     "playwright-core": "^1.54.2",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.18",
     "postcss-import": "^16.1.1",
     "qrcode": "^1.5.4",
     "react": "^18.3.1",
